@@ -8,7 +8,7 @@ var certPath = "C:\\ProgramData\\Qlik\\Sense\\Repository\\Exported Certificates\
 var config = extend(true, {
 
     hostname:'windows10',
-	remotehostname:'10.76.224.67',
+	remotehostname:'localhost',
     cookieName: 'X-Qlik-Session',
     origin: 'http://localhost:3000',
 
