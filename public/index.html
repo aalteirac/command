@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SEAL Test</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<h1>SEAL Sample NodeJS Remote Session Control</h1>
+<table>
+	<tr>
+        <td>User ID:</td>
+        <td>
+		<select id="userid">
+		  <option value="qlikservice" selected>qlikservice</option>
+		  <option value="toto">toto</option>
+		</select>
+		</td>
+    </tr>
+    <tr class="conn">
+        <td>App ID:</td>
+        <td><select id="appid"></select></td>
+    </tr>
+    <tr class="conn">
+        <td>Field Name:</td>
+        <td><select id="field"></select></td>
+    </tr>
+    <tr class="conn">
+        <td>Value:</td>
+        <td><input type="text" id="value" value=""></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+		<td><input type="submit" value="Connect" id="connect"></td>
+        <td class="conn"><input type="submit" value="Submit" id="go"><input type="submit" value="Clear" id="clear"></td>
+    </tr>
+</table>
+<a id="url" href="" target="_blank">OPEN THIS APP IN NEW TAB</a>
+<iframe id="appf" style="display:none" src=""></iframe>
+</body>
+<script type="text/javascript" src="javascripts/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="javascripts/main.js"></script>
+</html>
